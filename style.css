@@ -1,0 +1,51 @@
+.center{
+    text-align: center;
+}
+
+.center h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    margin-bottom: -10px;
+    text-shadow:  rgb(240, 165, 163) 0px 1px 6px;
+}
+
+.center p{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url("download.png");
+}
+.github-button{
+    background-color: black;
+    padding: 7px;
+    border-radius: 10%;
+    box-shadow: rgb(240, 165, 163) 0px 0px 10px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 20px;
+}
+
+.box{
+    height: 200px;
+    width: 345px;
+    background-color: rgba(255, 220, 184, 0.37);
+    margin: 20px;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
+    border-radius: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box p{
+    margin-top: 60px;
+}

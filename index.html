@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>JavaScript30 challange</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>JavaScript30</h1>
+      <p>30 days vanilla JS coding challange by WebBos</p>
+      <div class="github-buttons">
+        <a
+          class="github-button"
+          href="https://github.com/rishijagariya/JavaScript30"
+          ><i class="fa fa-star-o" aria-hidden="true"></i> Star</a
+        >
+        <a class="github-button" href="https://github.com/rishijagariya"
+          ><i class="fa fa-github" aria-hidden="true"></i> Follow</a
+        >
+        <a
+          class="github-button"
+          href="https://github.com/rishijagariya/JavaScript30/fork"
+          ><i class="fa fa-code-fork" aria-hidden="true"></i> Fork</a
+        >
+      </div>
+      <div class="container" id="container"></div>
+    </div>
+
+    <script>
+      var data = [
+        "JS Drum Kit",
+        "JS CSS Clock",
+        "CSS Variables",
+        "Array Cardio",
+        "Flex Panel Gallery",
+        "Type Ahead",
+      ];
+      var day = 1;
+      var temp = document.getElementById("container").innerHTML;
+
+      function runit(day) {
+        window.location.href = "/" + day + "/index-START.html";
+      }
+
+      for (; day <= data.length; day++) {
+        temp =
+          temp +
+          '<div class="box" onclick="runit(' +
+          day +
+          ')"><p>Day' +
+          day +
+          "<br />" +
+          data[day - 1] +
+          "</p></div>";
+      }
+      document.getElementById("container").innerHTML = temp;
+    </script>
+  </body>
+</html>

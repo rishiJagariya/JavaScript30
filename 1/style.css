@@ -13,7 +13,7 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 76vh;
   align-items: center;
   justify-content: center;
 }
@@ -48,4 +48,26 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.title{
+  font-size: 70px;
+  color: #ffc600;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: -200px;
+}
+
+.tag{
+  height: 100px;
+  padding: 20px 0px 0px 20px;
+  width: 170px;
+  font-size: 40px;
+  color: #ffc600;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 0% 0% 20% 0%;
+  
+}
+.tag a{
+  color: rgb(230, 230, 230);
 }
